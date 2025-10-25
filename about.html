@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About KERA FRESH - From South India to the World | Authentic South Indian Foods</title>
+    <meta name="description" content="Learn about KERA FRESH - Our journey from Kerala kitchens to UAE homes. Stone-ground, naturally fermented, authentic South Indian instant batters since 2022.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kera-pink': '#df38b5',
+                        'kera-magenta': '#e024c7',
+                        'kera-dark-pink': '#d63384',
+                        'kera-light-pink': '#f8a5c2',
+                        'kera-lighter-pink': '#f4c2c2',
+                        'kera-bg': '#fff6f8',
+                        'kera-bg-alt': '#fffafc',
+                        'kera-gold': '#d4af37',
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .gradient-pink {
+            background: linear-gradient(90deg, #f7aac4, #e88bb0);
+        }
+
+        .gradient-section {
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Top Marquee Bar -->
+    <div class="gradient-pink py-2 text-white text-center overflow-hidden">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="font-medium">🏢 About KERA FRESH – Crafting Authentic South Indian Foods Since 2022 | HACCP & ISO 22000:2018 Certified &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="font-medium">🏢 About KERA FRESH – Crafting Authentic South Indian Foods Since 2022 | HACCP & ISO 22000:2018 Certified &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="KERA Fresh Logo" class="h-14 md:h-20 w-auto">
+                    <div class="hidden sm:block">
+                        <h6 class="text-sm md:text-base lg:text-lg font-bold text-[#7e1f3d] leading-tight">
+                            A Taste of South India in Every Bite
+                        </h6>
+                        <h6 class="text-xs md:text-sm lg:text-base text-kera-pink leading-tight">
+                            – Natural. Traditional. Ready-to-Cook.
+                        </h6>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-kera-pink focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Home</a>
+                    <a href="about.html" class="text-kera-magenta font-semibold hover:text-kera-dark-pink transition">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Careers</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 font-medium">Home</a>
+                    <a href="about.html" class="text-kera-magenta font-semibold">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium">Careers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-section py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#87003e] mb-6" data-aos="fade-up">
+                From South India to the World
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                Where Tradition Meets Convenience. A Taste of Home, Wherever You Are.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-kera-magenta mb-8 text-center" data-aos="fade-up">
+                    Our Story
+                </h2>
+
+                <div class="space-y-6 text-gray-700 text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    <p>
+                        <strong class="text-kera-pink">KERA FRESH</strong> is more than just a food brand - it's a bridge between South Indian culinary heritage and modern convenience. Rooted in centuries-old traditions, our batters and ready-to-cook foods bring the warmth, flavor, and comfort of home-cooked meals to kitchens across the UAE and beyond.
+                    </p>
+
+                    <p>
+                        Founded in <strong>Ajman, UAE, in 2022</strong> under <strong>South Lagoon Food Products LLC</strong>, KERA FRESH began as a humble initiative to serve the Indian diaspora longing for the authentic taste of home. Today, we proudly serve families, restaurants, hotels, and food businesses, delivering freshness, quality, and authenticity with every product.
+                    </p>
+
+                    <p>
+                        The heart of South Indian cooking lies in patience - soaking, grinding, fermenting, and perfecting. KERA FRESH was born to honor those traditions while adapting them for modern kitchens. Crafted locally in the UAE, we combine traditional artistry with modern precision - retaining heritage while ensuring hygiene, safety, and convenience.
+                    </p>
+
+                    <p>
+                        In a fast-paced world, we make it simple to enjoy wholesome, nutritious meals - preserving the soul of tradition while offering the ease of instant preparation.
+                    </p>
+
+                    <p class="text-kera-magenta font-semibold text-xl text-center italic">
+                        KERA FRESH - because every meal deserves the warmth of authenticity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="bg-kera-bg py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-kera-magenta mb-12" data-aos="fade-up">
+                Our Philosophy
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-scale" data-aos="fade-right">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-bullseye text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-kera-pink mb-3">Mission</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                To bring authentic South Indian taste into every kitchen through nutritious, preservative-free, ready-to-cook products made using traditional methods and pure ingredients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-scale" data-aos="fade-left">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-kera-gold text-white rounded-full w-16 h-16 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-eye text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-kera-gold mb-3">Vision</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                To be the world's most trusted instant batter brand - preserving cultural food traditions and making wholesome meals accessible for all.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="max-w-5xl mx-auto" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-kera-magenta mb-8 text-center">Core Values</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover-scale">
+                        <div class="bg-kera-light-pink text-white rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-800 mb-2">Authenticity</h5>
+                        <p class="text-gray-600 text-sm">Traditional recipes, genuine flavors</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover-scale">
+                        <div class="bg-kera-light-pink text-white rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-award text-xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-800 mb-2">Quality</h5>
+                        <p class="text-gray-600 text-sm">HACCP & ISO certified standards</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover-scale">
+                        <div class="bg-kera-light-pink text-white rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-800 mb-2">Community</h5>
+                        <p class="text-gray-600 text-sm">Serving families and businesses</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover-scale">
+                        <div class="bg-kera-light-pink text-white rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bolt text-xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-800 mb-2">Convenience</h5>
+                        <p class="text-gray-600 text-sm">Ready-to-cook, hassle-free</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover-scale">
+                        <div class="bg-kera-light-pink text-white rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-lightbulb text-xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-800 mb-2">Innovation</h5>
+                        <p class="text-gray-600 text-sm">Modern techniques, traditional taste</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover-scale">
+                        <div class="bg-kera-light-pink text-white rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-handshake text-xl"></i>
+                        </div>
+                        <h5 class="font-bold text-gray-800 mb-2">Integrity</h5>
+                        <p class="text-gray-600 text-sm">Transparent, honest, trustworthy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Promise Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-kera-magenta mb-12" data-aos="fade-up">
+                Our Promise
+            </h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg border-l-4 border-kera-pink" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-leaf text-3xl text-kera-magenta"></i>
+                        <div>
+                            <h5 class="font-bold text-gray-800 mb-2">100% Natural</h5>
+                            <p class="text-gray-600 text-sm">Preservative-free batters and foods</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg border-l-4 border-kera-pink" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-sync-alt text-3xl text-kera-magenta"></i>
+                        <div>
+                            <h5 class="font-bold text-gray-800 mb-2">Stone-Ground</h5>
+                            <p class="text-gray-600 text-sm">Naturally fermented using traditional methods</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg border-l-4 border-kera-pink" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-clock text-3xl text-kera-magenta"></i>
+                        <div>
+                            <h5 class="font-bold text-gray-800 mb-2">Freshly Prepared</h5>
+                            <p class="text-gray-600 text-sm">Made daily in the UAE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg border-l-4 border-kera-pink" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-certificate text-3xl text-kera-magenta"></i>
+                        <div>
+                            <h5 class="font-bold text-gray-800 mb-2">HACCP & ISO Certified</h5>
+                            <p class="text-gray-600 text-sm">ISO 22000:2018 certified production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg border-l-4 border-kera-pink" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-utensils text-3xl text-kera-magenta"></i>
+                        <div>
+                            <h5 class="font-bold text-gray-800 mb-2">Authentic Taste</h5>
+                            <p class="text-gray-600 text-sm">Ready-to-cook convenience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg border-l-4 border-kera-pink" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-box text-3xl text-kera-magenta"></i>
+                        <div>
+                            <h5 class="font-bold text-gray-800 mb-2">Carefully Packaged</h5>
+                            <p class="text-gray-600 text-sm">Ensuring maximum freshness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="gradient-section py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-[#87003e] mb-8" data-aos="fade-up">
+                    Our Sustainability Journey
+                </h2>
+
+                <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p class="text-lg">
+                            At KERA FRESH, we believe in responsible business practices that honor both tradition and the environment. Our sustainability journey encompasses:
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-recycle text-2xl text-kera-magenta mt-1"></i>
+                                <div>
+                                    <h5 class="font-bold text-gray-800 mb-2">Eco-Friendly Packaging</h5>
+                                    <p class="text-gray-600">Moving toward 100% recyclable packaging by 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-2xl text-kera-magenta mt-1"></i>
+                                <div>
+                                    <h5 class="font-bold text-gray-800 mb-2">Local Sourcing</h5>
+                                    <p class="text-gray-600">Supporting local UAE suppliers and reducing carbon footprint</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-handshake text-2xl text-kera-magenta mt-1"></i>
+                                <div>
+                                    <h5 class="font-bold text-gray-800 mb-2">Fair Trade</h5>
+                                    <p class="text-gray-600">Direct partnerships with South Indian farmers</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-tint text-2xl text-kera-magenta mt-1"></i>
+                                <div>
+                                    <h5 class="font-bold text-gray-800 mb-2">Water Conservation</h5>
+                                    <p class="text-gray-600">Efficient water usage in our production processes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-center text-kera-magenta font-semibold italic mt-8">
+                            "For South Indians abroad, it's the taste of home. For others, it's a flavorful discovery of South Indian culture."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-kera-magenta py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" data-aos="fade-up">
+                Experience the KERA FRESH Difference
+            </h2>
+            <p class="text-white text-lg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Join thousands of families who trust KERA FRESH for authentic South Indian flavors
+            </p>
+            <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="products.html" class="bg-white text-kera-magenta px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                    Explore Our Products
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-kera-magenta transition">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kera-dark-pink text-white py-12">
+        <div class="container mx-auto px-4">
+            <!-- Hashtag Marquee -->
+            <div class="text-center mb-8">
+                <div class="marquee overflow-hidden">
+                    <div class="marquee-content font-medium">
+                        <span>#TasteWithKera  •  #KeraKitchen  •  #SouthIndianInstantBatter  •  #CookLessRelishMore &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>#TasteWithKera  •  #KeraKitchen  •  #SouthIndianInstantBatter  •  #CookLessRelishMore &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Follow Us -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Follow Us & Stay Updated</h5>
+                    <p class="mb-4">
+                        <i class="fab fa-instagram mr-2"></i> Instagram  •
+                        <i class="fab fa-facebook mx-2"></i> Facebook  •
+                        <i class="fab fa-twitter mx-2"></i> Twitter
+                    </p>
+                    <p class="text-sm">
+                        <i class="fas fa-envelope mr-2"></i><em>Subscribe</em> for recipe videos, product updates & offers<br>
+                        <i class="fas fa-shopping-cart mr-2"></i><strong>Online Ordering</strong> – Coming Soon
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Contact Info</h5>
+                    <p class="text-sm leading-relaxed">
+                        <i class="fas fa-phone mr-2"></i>
+                        <a href="tel:+97167674704" class="underline hover:text-yellow-300">+971 67674704</a><br>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:sales@south-lagoon.com" class="underline hover:text-yellow-300">sales@south-lagoon.com</a><br>
+                        <i class="fas fa-globe mr-2"></i>
+                        <a href="https://www.south-lagoon.com" target="_blank" class="underline hover:text-yellow-300">www.south-lagoon.com</a><br>
+                        <i class="fas fa-map-marker-alt mr-2"></i> PO Box 8143, Al Jurf Industrial-1, Ajman, UAE
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-white/30 mb-6">
+
+            <!-- Copyright -->
+            <div class="text-center text-sm">
+                © 2025 South Lagoon Food Products LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+        id="back-to-top"
+        class="fixed bottom-8 right-8 bg-kera-magenta text-white w-12 h-12 rounded-full shadow-lg hidden hover:bg-kera-dark-pink transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

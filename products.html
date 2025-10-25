@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - KERA FRESH | Authentic South Indian Instant Batters & Foods</title>
+    <meta name="description" content="Explore KERA FRESH range of authentic South Indian instant foods - Idli & Dosa Batter, Vada Batter, Appam, Malabar Parotta, Instant Poori & more. Stone-ground, naturally fermented, preservative-free.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kera-pink': '#df38b5',
+                        'kera-magenta': '#e024c7',
+                        'kera-dark-pink': '#d63384',
+                        'kera-light-pink': '#f8a5c2',
+                        'kera-lighter-pink': '#f4c2c2',
+                        'kera-bg': '#fff6f8',
+                        'kera-bg-alt': '#fffafc',
+                        'kera-gold': '#d4af37',
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .gradient-pink {
+            background: linear-gradient(90deg, #f7aac4, #e88bb0);
+        }
+
+        .gradient-hero {
+            background: linear-gradient(to right, #f2c5d3, #ffffff);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #df38b5, #f6d365);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Top Marquee Bar -->
+    <div class="gradient-pink py-2 text-white text-center overflow-hidden">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="font-medium">🥘 Our Products – 7 Authentic South Indian Foods | Stone-Ground, Naturally Fermented, Preservative-Free &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="font-medium">🥘 Our Products – 7 Authentic South Indian Foods | Stone-Ground, Naturally Fermented, Preservative-Free &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="KERA Fresh Logo" class="h-14 md:h-20 w-auto">
+                    <div class="hidden sm:block">
+                        <h6 class="text-sm md:text-base lg:text-lg font-bold text-[#7e1f3d] leading-tight">
+                            A Taste of South India in Every Bite
+                        </h6>
+                        <h6 class="text-xs md:text-sm lg:text-base text-kera-pink leading-tight">
+                            – Natural. Traditional. Ready-to-Cook.
+                        </h6>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-kera-pink focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">About</a>
+                    <a href="products.html" class="text-kera-magenta font-semibold hover:text-kera-dark-pink transition">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Careers</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium">About</a>
+                    <a href="products.html" class="text-kera-magenta font-semibold">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium">Careers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-section py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#87003e] mb-6" data-aos="fade-up">
+                Our Range of Authentic South Indian Instant Foods
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8" data-aos="fade-up" data-aos-delay="100">
+                At KERA FRESH, every product is a celebration of tradition, taste, and convenience. We source the finest ingredients from South India, ferment naturally, and bring you foods that taste like they were made at home - but in minutes.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <button class="border-2 border-kera-magenta text-kera-magenta px-8 py-3 rounded-full font-bold hover:bg-kera-magenta hover:text-white transition opacity-60 cursor-not-allowed">
+                    🛒 E-Commerce Coming Soon
+                </button>
+                <a href="contact.html" class="bg-kera-magenta text-white px-8 py-3 rounded-full font-bold hover:bg-kera-dark-pink transition">
+                    📞 Contact for Orders
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="bg-kera-bg-alt py-16">
+        <div class="container mx-auto px-4">
+            <div class="space-y-20">
+
+                <!-- Product 1: Idli & Dosa Batter -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center" data-aos="fade-up">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 md:h-96">
+                        <img src="images/idlliiii.jpg" alt="Idli & Dosa Batter" class="w-full h-full object-cover hover-scale">
+                    </div>
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-l-8 border-kera-magenta">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-bowl-rice text-4xl text-kera-magenta"></i>
+                            <h3 class="text-2xl md:text-3xl font-bold text-kera-magenta">Idli & Dosa Batter</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Made from premium rice and urad dal, stone-ground and naturally fermented to perfection.
+                        </p>
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-800 mb-3">✨ Benefits:</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>100% natural fermentation, no preservatives</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Ready in minutes - perfect for busy mornings</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Versatile for fluffy idlis and crispy dosas</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">📦 Packaging:</p>
+                                <p class="font-semibold text-gray-800">1kg | 5kg</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">⏰ Shelf Life:</p>
+                                <p class="font-semibold text-gray-800">7 days refrigerated</p>
+                            </div>
+                        </div>
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Perfect for:</strong> Fluffy idlis, crispy dosas, and traditional South Indian breakfasts
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Vada Batter -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center" data-aos="fade-up">
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-l-8 border-kera-magenta order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-circle text-4xl text-kera-magenta"></i>
+                            <h3 class="text-2xl md:text-3xl font-bold text-kera-magenta">Vada Batter</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Smooth, thick, and perfectly balanced for golden, fluffy vadas every time.
+                        </p>
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-800 mb-3">✨ Benefits:</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Easy shaping and quick frying</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Authentic homemade taste</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Perfect texture - crispy outside, soft inside</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">📦 Packaging:</p>
+                                <p class="font-semibold text-gray-800">1kg | 5kg</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">⏰ Shelf Life:</p>
+                                <p class="font-semibold text-gray-800">7 days refrigerated</p>
+                            </div>
+                        </div>
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Perfect for:</strong> Breakfast platters, snacks, and festive meals
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 md:h-96 order-1 md:order-2">
+                        <img src="images/Medu-Vada.jpg" alt="Vada Batter" class="w-full h-full object-cover hover-scale">
+                    </div>
+                </div>
+
+                <!-- Product 3: Appam Batter -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center" data-aos="fade-up">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 md:h-96">
+                        <img src="images/appam.jpg" alt="Appam Batter" class="w-full h-full object-cover hover-scale">
+                    </div>
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-l-8 border-kera-magenta">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-cookie-bite text-4xl text-kera-magenta"></i>
+                            <h3 class="text-2xl md:text-3xl font-bold text-kera-magenta">Appam Batter</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Soft-centered, lacy-edged appams made with rice and coconut - a Kerala specialty.
+                        </p>
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-800 mb-3">✨ Benefits:</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Naturally fermented for authentic flavor</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Gluten-free and easy to digest</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Ready in minutes with perfect texture</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">📦 Packaging:</p>
+                                <p class="font-semibold text-gray-800">1kg | Catering packs</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">⏰ Shelf Life:</p>
+                                <p class="font-semibold text-gray-800">7 days refrigerated</p>
+                            </div>
+                        </div>
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Perfect for:</strong> Breakfast or dinner served with coconut milk, vegetable stew, or kurma
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Malabar Parotta -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center" data-aos="fade-up">
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-l-8 border-kera-gold order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-bread-slice text-4xl text-kera-gold"></i>
+                            <h3 class="text-2xl md:text-3xl font-bold text-kera-gold">Malabar Parotta</h3>
+                            <span class="bg-kera-gold text-white px-3 py-1 rounded-full text-sm">Half-Cooked</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Flaky, layered perfection - half-cooked and sealed for ultimate freshness.
+                        </p>
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-800 mb-3">✨ Benefits:</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-gold mt-1"></i>
+                                    <span>Restaurant-style taste in just 3 minutes</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-gold mt-1"></i>
+                                    <span>Soft and rich texture, flaky layers</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-gold mt-1"></i>
+                                    <span>Zero prep - just heat and serve</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">📦 Packaging:</p>
+                                <p class="font-semibold text-gray-800">5 / 10 pcs | Bulk catering</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">⏰ Prep Time:</p>
+                                <p class="font-semibold text-gray-800">3 minutes</p>
+                            </div>
+                        </div>
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Perfect for:</strong> Quick meals with curries, gravies, or stir-fried vegetables
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 md:h-96 order-1 md:order-2 bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center">
+                        <i class="fas fa-bread-slice text-9xl text-kera-gold opacity-30"></i>
+                    </div>
+                </div>
+
+                <!-- Product 5: Instant Poori -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center" data-aos="fade-up">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 md:h-96 bg-gradient-to-br from-amber-100 to-yellow-100 flex items-center justify-center">
+                        <i class="fas fa-circle text-9xl text-kera-magenta opacity-30"></i>
+                    </div>
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-l-8 border-kera-magenta">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-cookie text-4xl text-kera-magenta"></i>
+                            <h3 class="text-2xl md:text-3xl font-bold text-kera-magenta">Instant Poori</h3>
+                            <span class="bg-kera-magenta text-white px-3 py-1 rounded-full text-sm">Ready-to-Fry</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Pre-shaped wheat discs for quick, puffed pooris anytime - no rolling, no mess!
+                        </p>
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-800 mb-3">✨ Benefits:</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Zero prep - just fry and serve</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Consistent golden results every time</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Perfect for quick meals and parties</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">📦 Packaging:</p>
+                                <p class="font-semibold text-gray-800">10 pcs | Bulk catering</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">⏰ Prep Time:</p>
+                                <p class="font-semibold text-gray-800">2 minutes</p>
+                            </div>
+                        </div>
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Perfect for:</strong> Breakfast, snacks, or festive celebrations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Idiyappam -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center" data-aos="fade-up">
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-l-8 border-kera-magenta order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-cookie text-4xl text-kera-magenta"></i>
+                            <h3 class="text-2xl md:text-3xl font-bold text-kera-magenta">Idiyappam</h3>
+                            <span class="bg-kera-magenta text-white px-3 py-1 rounded-full text-sm">Heat & Eat</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Soft, lacy string hoppers - pre-shaped and ready to steam in minutes.
+                        </p>
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-800 mb-3">✨ Benefits:</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Gluten-free and light on digestion</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Authentic texture and taste</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Pre-shaped for perfect results</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">📦 Packaging:</p>
+                                <p class="font-semibold text-gray-800">Pack of 10</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">⏰ Prep Time:</p>
+                                <p class="font-semibold text-gray-800">5 minutes</p>
+                            </div>
+                        </div>
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Perfect for:</strong> Light meals, breakfast, or dinner with coconut milk and curry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 md:h-96 order-1 md:order-2 bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+                        <i class="fas fa-dharmachakra text-9xl text-kera-magenta opacity-30"></i>
+                    </div>
+                </div>
+
+                <!-- Product 7: Grated Coconut -->
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center" data-aos="fade-up">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 md:h-96">
+                        <img src="images/coconut.jpg" alt="Grated Coconut" class="w-full h-full object-cover hover-scale">
+                    </div>
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-l-8 border-kera-magenta">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-seedling text-4xl text-kera-magenta"></i>
+                            <h3 class="text-2xl md:text-3xl font-bold text-kera-magenta">Grated Coconut</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Freshly grated, aromatic coconut - ready to use in cooking or desserts.
+                        </p>
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-800 mb-3">✨ Benefits:</h5>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Saves time - no grating needed</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>Maintains authentic flavor and aroma</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <i class="fas fa-check-circle text-kera-magenta mt-1"></i>
+                                    <span>100% natural, preservative-free</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">📦 Packaging:</p>
+                                <p class="font-semibold text-gray-800">150g | 500g | 1kg | Bulk</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">⏰ Shelf Life:</p>
+                                <p class="font-semibold text-gray-800">Fresh daily</p>
+                            </div>
+                        </div>
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Perfect for:</strong> Curries, chutneys, sweets, and traditional recipes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The KERA FRESH Way / Process Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-kera-magenta mb-4" data-aos="fade-up">
+                Our Process: The KERA FRESH Way
+            </h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                From farm to your kitchen, every step is crafted with care and precision
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Premium Sourcing</h5>
+                    <p class="text-gray-600 text-sm">
+                        Ingredients sourced directly from trusted farmers and rice mills in South India
+                    </p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Machine Cleaning</h5>
+                    <p class="text-gray-600 text-sm">
+                        Machine-cleaned and soaked to perfection for optimal texture
+                    </p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Stone Grinding</h5>
+                    <p class="text-gray-600 text-sm">
+                        Stone-ground under expert supervision to retain nutrition and flavor
+                    </p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">4</span>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Natural Fermentation</h5>
+                    <p class="text-gray-600 text-sm">
+                        Naturally fermented with no added colors, chemicals, or preservatives
+                    </p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">5</span>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Hygienic Packing</h5>
+                    <p class="text-gray-600 text-sm">
+                        Hygienically packed in food-grade material for maximum freshness
+                    </p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">6</span>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Fresh Delivery</h5>
+                    <p class="text-gray-600 text-sm">
+                        Delivered to your kitchen within 3-4 hours of packing
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 max-w-3xl mx-auto bg-gradient-to-r from-kera-light-pink to-kera-lighter-pink p-8 rounded-2xl text-center" data-aos="fade-up">
+                <p class="text-gray-800 font-semibold mb-2">🏆 Quality Assurance</p>
+                <p class="text-gray-700">
+                    Every batch undergoes over <strong>100 internal trials</strong> before final approval
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-kera-magenta py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" data-aos="fade-up">
+                Ready to Experience Authentic South Indian Flavors?
+            </h2>
+            <p class="text-white text-lg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Contact us today for bulk orders, B2B partnerships, or retail inquiries
+            </p>
+            <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="bg-white text-kera-magenta px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                    📞 Contact Us Now
+                </a>
+                <a href="index.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-kera-magenta transition">
+                    🏠 Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kera-dark-pink text-white py-12">
+        <div class="container mx-auto px-4">
+            <!-- Hashtag Marquee -->
+            <div class="text-center mb-8">
+                <div class="marquee overflow-hidden">
+                    <div class="marquee-content font-medium">
+                        <span>#KeraFreshProducts  •  #AuthenticSouthIndian  •  #InstantBatter  •  #ReadyToCook &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>#KeraFreshProducts  •  #AuthenticSouthIndian  •  #InstantBatter  •  #ReadyToCook &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Follow Us -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Follow Us & Stay Updated</h5>
+                    <p class="mb-4">
+                        <i class="fab fa-instagram mr-2"></i> Instagram  •
+                        <i class="fab fa-facebook mx-2"></i> Facebook  •
+                        <i class="fab fa-twitter mx-2"></i> Twitter
+                    </p>
+                    <p class="text-sm">
+                        <i class="fas fa-envelope mr-2"></i><em>Subscribe</em> for recipe videos, product updates & offers<br>
+                        <i class="fas fa-shopping-cart mr-2"></i><strong>Online Ordering</strong> – Coming Soon
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Contact Info</h5>
+                    <p class="text-sm leading-relaxed">
+                        <i class="fas fa-phone mr-2"></i>
+                        <a href="tel:+97167674704" class="underline hover:text-yellow-300">+971 67674704</a><br>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:sales@south-lagoon.com" class="underline hover:text-yellow-300">sales@south-lagoon.com</a><br>
+                        <i class="fas fa-globe mr-2"></i>
+                        <a href="https://www.south-lagoon.com" target="_blank" class="underline hover:text-yellow-300">www.south-lagoon.com</a><br>
+                        <i class="fas fa-map-marker-alt mr-2"></i> PO Box 8143, Al Jurf Industrial-1, Ajman, UAE
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-white/30 mb-6">
+
+            <!-- Copyright -->
+            <div class="text-center text-sm">
+                © 2025 South Lagoon Food Products LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+        id="back-to-top"
+        class="fixed bottom-8 right-8 bg-kera-magenta text-white w-12 h-12 rounded-full shadow-lg hidden hover:bg-kera-dark-pink transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

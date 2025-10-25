@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - KERA FRESH | Frequently Asked Questions About South Indian Instant Batters</title>
+    <meta name="description" content="Find answers to common questions about KERA FRESH products, shelf life, storage, ingredients, ordering, and more. Learn about our preservative-free South Indian instant batters.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kera-pink': '#df38b5',
+                        'kera-magenta': '#e024c7',
+                        'kera-dark-pink': '#d63384',
+                        'kera-light-pink': '#f8a5c2',
+                        'kera-lighter-pink': '#f4c2c2',
+                        'kera-bg': '#fff6f8',
+                        'kera-bg-alt': '#fffafc',
+                        'kera-gold': '#d4af37',
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .gradient-pink {
+            background: linear-gradient(90deg, #f7aac4, #e88bb0);
+        }
+
+        .gradient-section {
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-50%); }
+        }
+
+        /* FAQ Accordion Styles */
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Top Marquee Bar -->
+    <div class="gradient-pink py-2 text-white text-center overflow-hidden">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="font-medium">❓ Got Questions? Check Our FAQ Section - Quick Answers About KERA FRESH Products &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="font-medium">❓ Got Questions? Check Our FAQ Section - Quick Answers About KERA FRESH Products &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="KERA Fresh Logo" class="h-14 md:h-20 w-auto">
+                    <div class="hidden sm:block">
+                        <h6 class="text-sm md:text-base lg:text-lg font-bold text-[#7e1f3d] leading-tight">
+                            A Taste of South India in Every Bite
+                        </h6>
+                        <h6 class="text-xs md:text-sm lg:text-base text-kera-pink leading-tight">
+                            – Natural. Traditional. Ready-to-Cook.
+                        </h6>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-kera-pink focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Contact</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-section py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#87003e] mb-6" data-aos="fade-up">
+                Frequently Asked Questions
+            </h1>
+            <p class="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                Find answers to common questions about KERA FRESH products, storage, ordering, and more.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+
+                <!-- FAQ Category: Product Information -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h2 class="text-2xl md:text-3xl font-bold text-kera-magenta mb-6 flex items-center gap-3">
+                        <i class="fas fa-box-open"></i>
+                        Product Information
+                    </h2>
+
+                    <div class="space-y-4">
+                        <!-- Q1 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    How long does the batter last?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    Our batters last <strong>7 days when refrigerated</strong> at 4°C or below. For best taste and texture, we recommend consuming within <strong>5 days after opening</strong>. Always store in the original packaging and keep refrigerated.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    Do you use preservatives in your products?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>No!</strong> All KERA FRESH products are <strong>100% preservative-free</strong>. We use only natural ingredients and traditional fermentation methods. No artificial colors, chemicals, or preservatives are added to any of our products.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    Can I freeze the batter?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    Yes, <strong>unopened packs can be frozen</strong> for up to 2-3 weeks. Thaw in the refrigerator overnight before use. However, for optimal taste and fermentation quality, we recommend using fresh products from the refrigerator.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    Are your products gluten-free?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Idli Batter, Dosa Batter, Appam Batter, and Idiyappam are gluten-free</strong> as they're made from rice and urad dal. However, <strong>Malabar Parotta and Instant Poori contain wheat</strong> and are not gluten-free. Always check the packaging for specific allergen information.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    What makes KERA FRESH different from other brands?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <div class="text-gray-700 leading-relaxed">
+                                    <p class="mb-3">KERA FRESH stands out through:</p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li><strong>Stone grinding</strong> – Traditional methods for authentic texture</li>
+                                        <li><strong>Natural fermentation</strong> – No shortcuts or chemicals</li>
+                                        <li><strong>100% preservative-free</strong> – Just rice, urad dal, water & love</li>
+                                        <li><strong>HACCP & ISO 22000:2018 certified</strong> production</li>
+                                        <li><strong>Made fresh daily</strong> in the UAE</li>
+                                        <li><strong>Over 100 trials</strong> per batch for quality assurance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Category: Ordering & Availability -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h2 class="text-2xl md:text-3xl font-bold text-kera-magenta mb-6 flex items-center gap-3">
+                        <i class="fas fa-shopping-cart"></i>
+                        Ordering & Availability
+                    </h2>
+
+                    <div class="space-y-4">
+                        <!-- Q6 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    Where can I buy KERA FRESH products?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed mb-3">
+                                    KERA FRESH products are available at:
+                                </p>
+                                <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                                    <li>Leading UAE supermarkets (Lulu, Carrefour, Choithrams, etc.)</li>
+                                    <li>Select grocery stores across Dubai, Abu Dhabi, Sharjah, and Ajman</li>
+                                    <li>Direct orders via phone: <a href="tel:+97167674704" class="text-kera-magenta font-semibold">+971 67674704</a></li>
+                                    <li>Email orders: <a href="mailto:sales@south-lagoon.com" class="text-kera-magenta font-semibold">sales@south-lagoon.com</a></li>
+                                    <li><strong>Online ordering coming soon!</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Q7 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    Do you supply to restaurants and catering businesses?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Yes!</strong> We provide custom bulk and catering packs for restaurants, hotels, corporate canteens, and catering companies. We offer competitive B2B pricing and reliable daily delivery. Contact us at <a href="mailto:sales@south-lagoon.com" class="text-kera-magenta font-semibold">sales@south-lagoon.com</a> or call <a href="tel:+97167674704" class="text-kera-magenta font-semibold">+971 67674704</a> for B2B inquiries.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Q8 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    When will your e-commerce platform launch?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    Our online store is <strong>launching soon</strong> with home delivery across the UAE, subscription plans, and exclusive online offers. Sign up for updates at <a href="mailto:sales@south-lagoon.com?subject=E-Commerce Updates" class="text-kera-magenta font-semibold">sales@south-lagoon.com</a> to be the first to know when we go live!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Category: Storage & Usage -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h2 class="text-2xl md:text-3xl font-bold text-kera-magenta mb-6 flex items-center gap-3">
+                        <i class="fas fa-snowflake"></i>
+                        Storage & Usage
+                    </h2>
+
+                    <div class="space-y-4">
+                        <!-- Q9 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    How should I store KERA FRESH products?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <div class="text-gray-700 leading-relaxed">
+                                    <p class="mb-3"><strong>Storage Guidelines:</strong></p>
+                                    <ul class="list-disc list-inside space-y-2 ml-4">
+                                        <li>Keep refrigerated at 4°C or below at all times</li>
+                                        <li>Store in original packaging to maintain freshness</li>
+                                        <li>Once opened, seal tightly and use within 5 days</li>
+                                        <li>Do not leave at room temperature for extended periods</li>
+                                        <li>Check expiry date before use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q10 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    Do I need to add anything to the batter before cooking?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>No!</strong> Our batters are <strong>ready to use</strong> straight from the pack. Just give it a good stir and start cooking. However, you can adjust consistency by adding a little water if needed. For dosas, you may add a pinch of salt if you prefer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Category: Packaging & Sustainability -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h2 class="text-2xl md:text-3xl font-bold text-kera-magenta mb-6 flex items-center gap-3">
+                        <i class="fas fa-leaf"></i>
+                        Packaging & Sustainability
+                    </h2>
+
+                    <div class="space-y-4">
+                        <!-- Q11 -->
+                        <div class="faq-item bg-kera-bg rounded-xl overflow-hidden shadow-md">
+                            <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-kera-lighter-pink transition">
+                                <h3 class="font-bold text-gray-800 pr-4">
+                                    Is your packaging recyclable?
+                                </h3>
+                                <i class="fas fa-chevron-down faq-icon text-kera-magenta flex-shrink-0"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-5">
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Yes!</strong> We're committed to sustainability. Our current packaging is food-grade and recyclable. We're actively working towards <strong>100% eco-friendly, recyclable packaging by 2026</strong>. We also support local sourcing and fair trade practices with South Indian farmers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions? CTA -->
+    <section class="bg-kera-magenta py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" data-aos="fade-up">
+                Still Have Questions?
+            </h2>
+            <p class="text-white text-lg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                We're here to help! Contact us and we'll be happy to answer any questions you have.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="bg-white text-kera-magenta px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                    📧 Contact Us
+                </a>
+                <a href="https://wa.me/97167674704?text=Hello%20KERA%20FRESH%2C%20I%20have%20a%20question..." target="_blank" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-kera-magenta transition">
+                    💬 WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kera-dark-pink text-white py-12">
+        <div class="container mx-auto px-4">
+            <!-- Hashtag Marquee -->
+            <div class="text-center mb-8">
+                <div class="marquee overflow-hidden">
+                    <div class="marquee-content font-medium">
+                        <span>#KeraFreshFAQ  •  #KnowYourFood  •  #AuthenticSouthIndian  •  #QualityYouCanTrust &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>#KeraFreshFAQ  •  #KnowYourFood  •  #AuthenticSouthIndian  •  #QualityYouCanTrust &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Follow Us -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Follow Us & Stay Updated</h5>
+                    <p class="mb-4">
+                        <i class="fab fa-instagram mr-2"></i> Instagram  •
+                        <i class="fab fa-facebook mx-2"></i> Facebook  •
+                        <i class="fab fa-twitter mx-2"></i> Twitter
+                    </p>
+                    <p class="text-sm">
+                        <i class="fas fa-envelope mr-2"></i><em>Subscribe</em> for recipe videos, product updates & offers<br>
+                        <i class="fas fa-shopping-cart mr-2"></i><strong>Online Ordering</strong> – Coming Soon
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Contact Info</h5>
+                    <p class="text-sm leading-relaxed">
+                        <i class="fas fa-phone mr-2"></i>
+                        <a href="tel:+97167674704" class="underline hover:text-yellow-300">+971 67674704</a><br>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:sales@south-lagoon.com" class="underline hover:text-yellow-300">sales@south-lagoon.com</a><br>
+                        <i class="fas fa-globe mr-2"></i>
+                        <a href="https://www.south-lagoon.com" target="_blank" class="underline hover:text-yellow-300">www.south-lagoon.com</a><br>
+                        <i class="fas fa-map-marker-alt mr-2"></i> PO Box 8143, Al Jurf Industrial-1, Ajman, UAE
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-white/30 mb-6">
+
+            <!-- Copyright -->
+            <div class="text-center text-sm">
+                © 2025 South Lagoon Food Products LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+        id="back-to-top"
+        class="fixed bottom-8 right-8 bg-kera-magenta text-white w-12 h-12 rounded-full shadow-lg hidden hover:bg-kera-dark-pink transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

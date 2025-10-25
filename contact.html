@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KERA FRESH | Get in Touch for Authentic South Indian Foods</title>
+    <meta name="description" content="Contact KERA FRESH for orders, inquiries, and partnerships. Serving supermarkets, restaurants, hotels, and families across UAE. Call +971 67674704 or email sales@south-lagoon.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kera-pink': '#df38b5',
+                        'kera-magenta': '#e024c7',
+                        'kera-dark-pink': '#d63384',
+                        'kera-light-pink': '#f8a5c2',
+                        'kera-lighter-pink': '#f4c2c2',
+                        'kera-bg': '#fff6f8',
+                        'kera-bg-alt': '#fffafc',
+                        'kera-gold': '#d4af37',
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .gradient-pink {
+            background: linear-gradient(90deg, #f7aac4, #e88bb0);
+        }
+
+        .gradient-section {
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Top Marquee Bar -->
+    <div class="gradient-pink py-2 text-white text-center overflow-hidden">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="font-medium">📞 Contact KERA FRESH - We're Here to Help! Call +971 67674704 or Email sales@south-lagoon.com &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="font-medium">📞 Contact KERA FRESH - We're Here to Help! Call +971 67674704 or Email sales@south-lagoon.com &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="KERA Fresh Logo" class="h-14 md:h-20 w-auto">
+                    <div class="hidden sm:block">
+                        <h6 class="text-sm md:text-base lg:text-lg font-bold text-[#7e1f3d] leading-tight">
+                            A Taste of South India in Every Bite
+                        </h6>
+                        <h6 class="text-xs md:text-sm lg:text-base text-kera-pink leading-tight">
+                            – Natural. Traditional. Ready-to-Cook.
+                        </h6>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-kera-pink focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Blog</a>
+                    <a href="contact.html" class="text-kera-magenta font-semibold hover:text-kera-dark-pink transition">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Careers</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium">Products</a>
+                    <a href="recipes.html" class="text-gray-700 font-medium">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium">Blog</a>
+                    <a href="contact.html" class="text-kera-magenta font-semibold">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium">Careers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-section py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#87003e] mb-6" data-aos="fade-up">
+                Contact Us
+            </h1>
+            <p class="text-lg md:text-xl text-gray-800 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                We'd love to hear from you! Whether you're a retailer, restaurant, or individual customer, get in touch with us today.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Phone -->
+                <div class="bg-kera-bg p-8 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-kera-magenta mb-2">Call Us</h3>
+                    <a href="tel:+97167674704" class="text-gray-700 hover:text-kera-magenta text-lg font-semibold">
+                        +971 67674704
+                    </a>
+                    <p class="text-gray-600 text-sm mt-2">Mon - Sat: 8:00 AM - 6:00 PM</p>
+                </div>
+
+                <!-- Email -->
+                <div class="bg-kera-bg p-8 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-kera-magenta mb-2">Email Us</h3>
+                    <a href="mailto:sales@south-lagoon.com" class="text-gray-700 hover:text-kera-magenta font-semibold">
+                        sales@south-lagoon.com
+                    </a>
+                    <p class="text-gray-600 text-sm mt-2">We'll respond within 24 hours</p>
+                </div>
+
+                <!-- Location -->
+                <div class="bg-kera-bg p-8 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-kera-magenta text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-kera-magenta mb-2">Visit Us</h3>
+                    <p class="text-gray-700 font-semibold">
+                        South Lagoon Food Products LLC
+                    </p>
+                    <p class="text-gray-600 text-sm mt-2">
+                        PO Box 8143<br>
+                        Al Jurf Industrial-1<br>
+                        Ajman, UAE
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="bg-kera-bg-alt py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-kera-magenta mb-4" data-aos="fade-up">
+                    Send Us a Message
+                </h2>
+                <p class="text-center text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
+                    Fill out the form below and we'll get back to you as soon as possible
+                </p>
+
+                <form id="contactForm" class="bg-white p-8 md:p-12 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">
+                                Full Name <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kera-magenta focus:border-transparent"
+                                placeholder="Your full name"
+                            >
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">
+                                Email Address <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kera-magenta focus:border-transparent"
+                                placeholder="your@email.com"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <!-- Phone -->
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-semibold mb-2">
+                                Phone Number
+                            </label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kera-magenta focus:border-transparent"
+                                placeholder="+971 XX XXX XXXX"
+                            >
+                        </div>
+
+                        <!-- Inquiry Type -->
+                        <div>
+                            <label for="inquiryType" class="block text-gray-700 font-semibold mb-2">
+                                Inquiry Type <span class="text-red-500">*</span>
+                            </label>
+                            <select
+                                id="inquiryType"
+                                name="inquiryType"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kera-magenta focus:border-transparent"
+                            >
+                                <option value="">Select inquiry type</option>
+                                <option value="retail">Retail / Individual Orders</option>
+                                <option value="b2b">B2B / Business Partnership</option>
+                                <option value="restaurant">Restaurant / Hotel Supply</option>
+                                <option value="supermarket">Supermarket / Retailer</option>
+                                <option value="catering">Catering / Bulk Orders</option>
+                                <option value="feedback">Feedback / Suggestions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="mb-6">
+                        <label for="subject" class="block text-gray-700 font-semibold mb-2">
+                            Subject <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kera-magenta focus:border-transparent"
+                            placeholder="Brief subject of your message"
+                        >
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">
+                            Message <span class="text-red-500">*</span>
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                            rows="6"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kera-magenta focus:border-transparent"
+                            placeholder="Tell us more about your inquiry..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button
+                            type="submit"
+                            class="bg-kera-magenta text-white px-12 py-4 rounded-full font-bold text-lg hover:bg-kera-dark-pink transition shadow-lg hover:shadow-xl"
+                        >
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </div>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="successMessage" class="hidden mt-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Thank you! Your message has been sent successfully. We'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-kera-magenta mb-4" data-aos="fade-up">
+                We Serve
+            </h2>
+            <p class="text-center text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
+                KERA FRESH proudly serves a diverse range of customers across the UAE
+            </p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-store text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Supermarkets & Retailers</h5>
+                    <p class="text-gray-600 text-sm">Stock authentic South Indian products</p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Restaurants & Hotels</h5>
+                    <p class="text-gray-600 text-sm">Consistent quality for your menu</p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-building text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Corporates & Canteens</h5>
+                    <p class="text-gray-600 text-sm">Bulk orders for employee meals</p>
+                </div>
+
+                <div class="bg-kera-bg p-6 rounded-2xl shadow-lg text-center hover-scale" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-gray-800 mb-2">Families & Communities</h5>
+                    <p class="text-gray-600 text-sm">Fresh home delivery options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-Commerce Coming Soon Section -->
+    <section class="gradient-section py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#87003e] mb-6" data-aos="fade-up">
+                    🛒 E-Commerce Launching Soon!
+                </h2>
+                <p class="text-lg text-gray-800 mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Get ready to order KERA FRESH online! We're excited to announce our upcoming online store, where you can browse our full product range, place orders, and enjoy fresh South Indian foods delivered directly to your home.
+                </p>
+
+                <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl mb-8" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold text-kera-magenta mb-6">What to Look Forward To:</h3>
+                    <div class="grid md:grid-cols-2 gap-6 text-left">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-kera-magenta text-xl mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-gray-800">User-Friendly Ordering</h5>
+                                <p class="text-gray-600 text-sm">Multiple secure payment options</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-kera-magenta text-xl mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-gray-800">Fast Delivery</h5>
+                                <p class="text-gray-600 text-sm">Same-day or next-day across UAE</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-kera-magenta text-xl mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-gray-800">Exclusive Offers</h5>
+                                <p class="text-gray-600 text-sm">Launch deals & combo packs</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-kera-magenta text-xl mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-gray-800">Order Tracking</h5>
+                                <p class="text-gray-600 text-sm">From checkout to doorstep</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-kera-magenta text-xl mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-gray-800">Subscription Plans</h5>
+                                <p class="text-gray-600 text-sm">Weekly or monthly delivery</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-kera-magenta text-xl mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-gray-800">B2B Portal</h5>
+                                <p class="text-gray-600 text-sm">Special deals for bulk orders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-kera-magenta p-6 rounded-2xl text-white" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-bold mb-3">Be the First to Know!</h4>
+                    <p class="mb-4">Sign up for updates and get early access to our e-commerce platform</p>
+                    <a href="mailto:sales@south-lagoon.com?subject=E-Commerce Updates Subscription" class="inline-block bg-white text-kera-magenta px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Subscribe for Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Contact CTA -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-gradient-to-r from-kera-light-pink to-kera-lighter-pink p-8 md:p-12 rounded-2xl text-center shadow-xl" data-aos="fade-up">
+                <i class="fab fa-whatsapp text-6xl text-green-600 mb-4"></i>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    Quick Connect via WhatsApp
+                </h3>
+                <p class="text-gray-700 mb-6">
+                    Need immediate assistance? Send us a message on WhatsApp for faster response!
+                </p>
+                <a
+                    href="https://wa.me/97167674704?text=Hello%20KERA%20FRESH%2C%20I%20would%20like%20to%20inquire%20about..."
+                    target="_blank"
+                    class="inline-block bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-700 transition shadow-lg">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kera-dark-pink text-white py-12">
+        <div class="container mx-auto px-4">
+            <!-- Hashtag Marquee -->
+            <div class="text-center mb-8">
+                <div class="marquee overflow-hidden">
+                    <div class="marquee-content font-medium">
+                        <span>#ContactKeraFresh  •  #GetInTouch  •  #SouthIndianFoods  •  #AuthenticTaste &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>#ContactKeraFresh  •  #GetInTouch  •  #SouthIndianFoods  •  #AuthenticTaste &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Follow Us -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Follow Us & Stay Updated</h5>
+                    <p class="mb-4">
+                        <i class="fab fa-instagram mr-2"></i> Instagram  •
+                        <i class="fab fa-facebook mx-2"></i> Facebook  •
+                        <i class="fab fa-twitter mx-2"></i> Twitter
+                    </p>
+                    <p class="text-sm">
+                        <i class="fas fa-envelope mr-2"></i><em>Subscribe</em> for recipe videos, product updates & offers<br>
+                        <i class="fas fa-shopping-cart mr-2"></i><strong>Online Ordering</strong> – Coming Soon
+                    </p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Contact Info</h5>
+                    <p class="text-sm leading-relaxed">
+                        <i class="fas fa-phone mr-2"></i>
+                        <a href="tel:+97167674704" class="underline hover:text-yellow-300">+971 67674704</a><br>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:sales@south-lagoon.com" class="underline hover:text-yellow-300">sales@south-lagoon.com</a><br>
+                        <i class="fas fa-globe mr-2"></i>
+                        <a href="https://www.south-lagoon.com" target="_blank" class="underline hover:text-yellow-300">www.south-lagoon.com</a><br>
+                        <i class="fas fa-map-marker-alt mr-2"></i> PO Box 8143, Al Jurf Industrial-1, Ajman, UAE
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-white/30 mb-6">
+
+            <!-- Copyright -->
+            <div class="text-center text-sm">
+                © 2025 South Lagoon Food Products LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+        id="back-to-top"
+        class="fixed bottom-8 right-8 bg-kera-magenta text-white w-12 h-12 rounded-full shadow-lg hidden hover:bg-kera-dark-pink transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+
+            // Here you would normally send the data to a server
+            // For now, we'll just show the success message
+            console.log('Form submitted:', data);
+
+            // Show success message
+            successMessage.classList.remove('hidden');
+            contactForm.reset();
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 5000);
+
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

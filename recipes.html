@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - KERA FRESH | Authentic South Indian Recipes Made Easy</title>
+    <meta name="description" content="Discover easy South Indian recipes using KERA FRESH instant batters. Learn to make perfect Idli, Dosa, Vada, Appam, Parotta and more. Traditional taste, modern convenience.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kera-pink': '#df38b5',
+                        'kera-magenta': '#e024c7',
+                        'kera-dark-pink': '#d63384',
+                        'kera-light-pink': '#f8a5c2',
+                        'kera-lighter-pink': '#f4c2c2',
+                        'kera-bg': '#fff6f8',
+                        'kera-bg-alt': '#fffafc',
+                        'kera-gold': '#d4af37',
+                    },
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .gradient-pink {
+            background: linear-gradient(90deg, #f7aac4, #e88bb0);
+        }
+
+        .gradient-hero {
+            background: linear-gradient(to right, #f2c5d3, #ffffff);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Top Marquee Bar -->
+    <div class="gradient-pink py-2 text-white text-center overflow-hidden">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="font-medium">🍛 Discover Authentic South Indian Recipes - Made Easy with KERA FRESH! &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="font-medium">🍛 Discover Authentic South Indian Recipes - Made Easy with KERA FRESH! &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="KERA Fresh Logo" class="h-14 md:h-20 w-auto">
+                    <div class="hidden sm:block">
+                        <h6 class="text-sm md:text-base lg:text-lg font-bold text-[#7e1f3d] leading-tight">
+                            A Taste of South India in Every Bite
+                        </h6>
+                        <h6 class="text-xs md:text-sm lg:text-base text-kera-pink leading-tight">
+                            – Natural. Traditional. Ready-to-Cook.
+                        </h6>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-kera-pink focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Products</a>
+                    <a href="recipes.html" class="text-kera-magenta font-semibold hover:text-kera-dark-pink transition">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium hover:text-kera-magenta transition">Careers</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium">About</a>
+                    <a href="products.html" class="text-gray-700 font-medium">Products</a>
+                    <a href="recipes.html" class="text-kera-magenta font-semibold">Recipes</a>
+                    <a href="blog.html" class="text-gray-700 font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 font-medium">Contact</a>
+                    <a href="careers.html" class="text-gray-700 font-medium">Careers</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-section py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#87003e] mb-6" data-aos="fade-up">
+                Taste Tradition, Made Easy
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                Discover authentic South Indian recipes using KERA FRESH products. From classic breakfast favorites to quick snacks, create restaurant-quality dishes at home in minutes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="bg-kera-bg py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up">
+                <h2 class="text-2xl md:text-3xl font-bold text-kera-magenta mb-6 text-center">
+                    <i class="fas fa-lightbulb mr-2"></i>
+                    Tips for Best Results
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-fire text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700">Use a non-stick pan for dosas for even cooking</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-wind text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700">Steam idlis in a tightly covered vessel for fluffier results</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-kera-light-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-clock text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700">Serve batters fresh within 3-4 hours of preparation for best taste</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+
+            <!-- Recipe 1: Classic Idli -->
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="images/h4.jpg" alt="Classic Idli" class="w-full rounded-2xl shadow-xl">
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-kera-magenta text-white px-4 py-1 rounded-full text-sm font-semibold">Breakfast</span>
+                            <span class="text-gray-600"><i class="far fa-clock mr-1"></i> 15 mins</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-kera-magenta mb-4">1. Classic Idli</h3>
+                        <p class="text-gray-700 mb-4">Soft, fluffy steamed rice cakes - a South Indian breakfast staple</p>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Ingredients:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>KERA FRESH Idli & Dosa Batter</li>
+                                <li>Oil for greasing</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Instructions:</h5>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                                <li>Grease idli molds with oil</li>
+                                <li>Pour KERA FRESH Idli Batter into molds (3/4 full)</li>
+                                <li>Steam for 10-12 minutes until cooked</li>
+                                <li>Let cool for 2 minutes, then remove</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Serve with:</strong> Coconut chutney & sambar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 2: Golden Dosa -->
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-kera-magenta text-white px-4 py-1 rounded-full text-sm font-semibold">Breakfast</span>
+                            <span class="text-gray-600"><i class="far fa-clock mr-1"></i> 10 mins</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-kera-magenta mb-4">2. Golden Dosa</h3>
+                        <p class="text-gray-700 mb-4">Crispy, golden crepe perfect for any meal</p>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Ingredients:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>KERA FRESH Idli & Dosa Batter</li>
+                                <li>Oil or ghee for cooking</li>
+                                <li>Salt (optional)</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Instructions:</h5>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                                <li>Heat a non-stick tawa on medium-high</li>
+                                <li>Pour a ladle of batter in center</li>
+                                <li>Spread in circular motion to make thin layer</li>
+                                <li>Drizzle oil/ghee around edges</li>
+                                <li>Cook until golden and crisp (2-3 mins)</li>
+                                <li>Fold and serve hot</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Serve with:</strong> Potato masala, chutney & sambar
+                            </p>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/dosabatter.jpg" alt="Golden Dosa" class="w-full rounded-2xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 3: Fluffy Medu Vada -->
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="images/Medu-Vada.jpg" alt="Medu Vada" class="w-full rounded-2xl shadow-xl">
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-kera-magenta text-white px-4 py-1 rounded-full text-sm font-semibold">Snack</span>
+                            <span class="text-gray-600"><i class="far fa-clock mr-1"></i> 20 mins</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-kera-magenta mb-4">3. Fluffy Medu Vada</h3>
+                        <p class="text-gray-700 mb-4">Crispy outside, soft inside - the perfect savory donut</p>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Ingredients:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>KERA FRESH Vada Batter</li>
+                                <li>Oil for deep frying</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Instructions:</h5>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                                <li>Heat oil in a deep pan (medium-high)</li>
+                                <li>Wet your hands with water</li>
+                                <li>Take a portion of batter, shape into donut</li>
+                                <li>Make a hole in center with finger</li>
+                                <li>Gently slide into hot oil</li>
+                                <li>Fry until golden brown (3-4 mins)</li>
+                                <li>Drain on paper towel</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Serve with:</strong> Coconut chutney & sambar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 4: Appam with Coconut Milk -->
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-kera-magenta text-white px-4 py-1 rounded-full text-sm font-semibold">Breakfast/Dinner</span>
+                            <span class="text-gray-600"><i class="far fa-clock mr-1"></i> 15 mins</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-kera-magenta mb-4">4. Appam with Coconut Milk</h3>
+                        <p class="text-gray-700 mb-4">Lacy-edged, soft-centered Kerala delicacy</p>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Ingredients:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>KERA FRESH Appam Batter</li>
+                                <li>Oil for greasing</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Instructions:</h5>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                                <li>Heat appam pan, grease lightly with oil</li>
+                                <li>Pour a ladle of batter in center</li>
+                                <li>Swirl pan to spread batter on sides</li>
+                                <li>Cover and cook on medium heat (2-3 mins)</li>
+                                <li>Edges should be lacy, center soft</li>
+                                <li>Remove carefully</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Serve with:</strong> Coconut milk, vegetable stew, or egg curry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="images/appam.jpg" alt="Appam" class="w-full rounded-2xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 5: Malabar Parotta & Kurma -->
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-gradient-to-br from-amber-100 to-yellow-100 rounded-2xl shadow-xl flex items-center justify-center h-80">
+                        <i class="fas fa-bread-slice text-9xl text-kera-gold opacity-30"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-kera-gold text-white px-4 py-1 rounded-full text-sm font-semibold">Lunch/Dinner</span>
+                            <span class="text-gray-600"><i class="far fa-clock mr-1"></i> 5 mins</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-kera-gold mb-4">5. Malabar Parotta & Kurma</h3>
+                        <p class="text-gray-700 mb-4">Flaky, layered flatbread - restaurant quality in 3 minutes</p>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Ingredients:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>KERA FRESH Half-Cooked Malabar Parotta</li>
+                                <li>Oil or ghee for cooking</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Instructions:</h5>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                                <li>Heat a tawa on medium heat</li>
+                                <li>Place half-cooked parotta on tawa</li>
+                                <li>Cook for 1.5 minutes on each side</li>
+                                <li>Brush with oil/ghee while cooking</li>
+                                <li>Press gently with spatula for flaky layers</li>
+                                <li>Remove when golden and crispy</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Serve with:</strong> Spicy veg or meat kurma, chicken curry
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 6: Instant Poori -->
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-kera-magenta text-white px-4 py-1 rounded-full text-sm font-semibold">Breakfast/Snack</span>
+                            <span class="text-gray-600"><i class="far fa-clock mr-1"></i> 10 mins</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-kera-magenta mb-4">6. Instant Poori</h3>
+                        <p class="text-gray-700 mb-4">Puffed, golden wheat bread - zero prep required</p>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Ingredients:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>KERA FRESH Ready-to-Fry Poori Discs</li>
+                                <li>Oil for deep frying</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Instructions:</h5>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                                <li>Heat oil in a deep pan (medium-high)</li>
+                                <li>Gently slide one poori disc into hot oil</li>
+                                <li>Press gently with slotted spoon to help puff</li>
+                                <li>Fry until puffed and golden (1-2 mins)</li>
+                                <li>Flip and fry other side</li>
+                                <li>Drain on paper towel</li>
+                                <li>Serve immediately</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Serve with:</strong> Potato masala, chole (chickpea curry), or any curry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl shadow-xl flex items-center justify-center h-80">
+                        <i class="fas fa-cookie text-9xl text-kera-magenta opacity-30"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 7: Coconut Chutney -->
+            <div class="max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="images/coconut.jpg" alt="Coconut Chutney" class="w-full rounded-2xl shadow-xl">
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-kera-magenta text-white px-4 py-1 rounded-full text-sm font-semibold">Side Dish</span>
+                            <span class="text-gray-600"><i class="far fa-clock mr-1"></i> 5 mins</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-kera-magenta mb-4">7. Coconut Chutney in Minutes</h3>
+                        <p class="text-gray-700 mb-4">Fresh, authentic chutney - the perfect accompaniment</p>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Ingredients:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>1 cup KERA FRESH Grated Coconut</li>
+                                <li>2-3 green chilies</li>
+                                <li>1-inch ginger</li>
+                                <li>Salt to taste</li>
+                                <li>For tempering: mustard seeds, curry leaves, oil</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="font-bold text-gray-800 mb-2">Instructions:</h5>
+                            <ol class="list-decimal list-inside text-gray-700 space-y-2">
+                                <li>Blend coconut, chilies, ginger, salt with little water</li>
+                                <li>Grind to smooth paste</li>
+                                <li>Heat oil, add mustard seeds</li>
+                                <li>When they splutter, add curry leaves</li>
+                                <li>Pour tempering over chutney</li>
+                                <li>Mix well and serve</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-kera-bg p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Serve with:</strong> Idli, dosa, vada, uttapam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-kera-magenta py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" data-aos="fade-up">
+                Ready to Try These Recipes?
+            </h2>
+            <p class="text-white text-lg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Get KERA FRESH products and start cooking authentic South Indian meals today!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="products.html" class="bg-white text-kera-magenta px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                    View All Products
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-kera-magenta transition">
+                    Contact for Orders
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kera-dark-pink text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <div class="marquee overflow-hidden">
+                    <div class="marquee-content font-medium">
+                        <span>#KeraRecipes  •  #SouthIndianCooking  •  #AuthenticFlavors  •  #EasyCooking &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>#KeraRecipes  •  #SouthIndianCooking  •  #AuthenticFlavors  •  #EasyCooking &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Follow Us & Stay Updated</h5>
+                    <p class="mb-4">
+                        <i class="fab fa-instagram mr-2"></i> Instagram  •
+                        <i class="fab fa-facebook mx-2"></i> Facebook  •
+                        <i class="fab fa-twitter mx-2"></i> Twitter
+                    </p>
+                    <p class="text-sm">
+                        <i class="fas fa-envelope mr-2"></i><em>Subscribe</em> for recipe videos, product updates & offers<br>
+                        <i class="fas fa-shopping-cart mr-2"></i><strong>Online Ordering</strong> – Coming Soon
+                    </p>
+                </div>
+
+                <div class="text-center md:text-left">
+                    <h5 class="text-xl font-bold mb-4">Contact Info</h5>
+                    <p class="text-sm leading-relaxed">
+                        <i class="fas fa-phone mr-2"></i>
+                        <a href="tel:+97167674704" class="underline hover:text-yellow-300">+971 67674704</a><br>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="mailto:sales@south-lagoon.com" class="underline hover:text-yellow-300">sales@south-lagoon.com</a><br>
+                        <i class="fas fa-globe mr-2"></i>
+                        <a href="https://www.south-lagoon.com" target="_blank" class="underline hover:text-yellow-300">www.south-lagoon.com</a><br>
+                        <i class="fas fa-map-marker-alt mr-2"></i> PO Box 8143, Al Jurf Industrial-1, Ajman, UAE
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-white/30 mb-6">
+
+            <div class="text-center text-sm">
+                © 2025 South Lagoon Food Products LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+        id="back-to-top"
+        class="fixed bottom-8 right-8 bg-kera-magenta text-white w-12 h-12 rounded-full shadow-lg hidden hover:bg-kera-dark-pink transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
